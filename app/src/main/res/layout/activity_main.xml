@@ -42,8 +42,9 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="submit"
+                    android:text="Submit"
                     android:textSize="14sp"
+                    android:textStyle="bold"
                     android:background="@drawable/transparent_bg"
                     android:textColor="@color/colorBlack"/>
 
