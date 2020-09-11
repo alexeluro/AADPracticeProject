@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorBlack</item>
+
+
+    </style>
+
+    <style name="AAD_submit_Button" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:backgroundTint">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:background">@drawable/round_white_bg</item>
+    </style>
+
+
+</resources>

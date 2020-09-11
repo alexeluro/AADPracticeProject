@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".ui.submit.SubmitActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--        <androidx.appcompat.widget.Toolbar-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content">-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:onClick="backButton"
+                    android:src="@drawable/ic_keyboard_backspace" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="150dp"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/gads" />
+
+            </RelativeLayout>
+
+            <!--        </androidx.appcompat.widget.Toolbar>-->
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:text="Project Submission"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/first_name"
+                android:background="@drawable/black_outlined_box"
+                android:hint="First Name"
+                android:padding="10dp"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="2"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/last_name"
+                android:background="@drawable/black_outlined_box"
+                android:hint="Last Name"
+                android:padding="10dp"
+                android:layout_marginStart="2dp"
+                android:layout_weight="2"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:background="@drawable/black_outlined_box"
+            android:hint="Email Address"
+            android:padding="10dp"
+            android:layout_margin="16sp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/github_link"
+            android:background="@drawable/black_outlined_box"
+            android:hint="Project on GITHUB(link)"
+            android:padding="10dp"
+            android:layout_margin="16sp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_orange_bg"
+            android:text="Submit"
+            android:textSize="16sp"
+            android:onClick="submitProject"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_progress"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</FrameLayout>
